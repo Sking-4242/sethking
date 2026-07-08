@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Seth King</title>
+<meta name="description" content="Projects by Seth King, including Archon — an AI-assisted cloud architecture design tool.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="site-nav">
+    <a href="index.html" class="brand">Seth King</a>
+    <div class="nav-links">
+      <a href="index.html">Who Am I</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html" class="active">Projects</a>
+    </div>
+    <div class="nav-social">
+      <a href="mailto:seth.king.p4@gmail.com" title="Email" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/sking4242" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.53 4.78 5.82V21h-4v-5.9c0-1.4-.03-3.2-1.98-3.2-1.98 0-2.28 1.5-2.28 3.1V21H9z"/></svg>
+      </a>
+      <a href="https://github.com/sking-4242" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.03 3.26 9.29 7.79 10.8.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 015.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.17 1.82 1.17 3.06 0 4.37-2.66 5.34-5.2 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A11.02 11.02 0 0023.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section style="margin-bottom:36px;">
+      <span class="eyebrow">Projects</span>
+      <h1>What I've Been Building</h1>
+      <p class="lead">A mix of cloud tooling and security-focused work — from a full architecture design platform down to hands-on detection and network segmentation projects.</p>
+    </section>
+
+    <section style="margin-bottom:0;">
+
+      <!-- Archon Professional -->
+      <div class="project-card">
+        <div class="project-title-row">
+          <div>
+            <h3 style="font-size:1.3rem;">Archon Professional</h3>
+            <div class="org" style="color:var(--text-muted); margin-top:2px;">Open-source visual cloud architecture &amp; IaC platform</div>
+          </div>
+          <span class="project-status status-active">Active</span>
+        </div>
+
+        <div class="tags">
+          <span class="tag">AWS</span>
+          <span class="tag">Azure</span>
+          <span class="tag">GCP</span>
+          <span class="tag">On-Prem</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">Multi-LLM AI</span>
+        </div>
+
+        <p>Archon Professional is a visual cloud infrastructure design tool: drag, drop, and wire together AWS, Azure, GCP, and on-prem components — over 260 in the library — directly on a canvas, then generate production-ready Terraform from the diagram using any of five integrated LLM providers.</p>
+
+        <p style="margin-top:14px; color:var(--text-muted); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; font-weight:600;">Highlights</p>
+        <ul class="bullets">
+          <li><strong style="color:var(--text);">Terraform import.</strong> Reverse-engineers existing .tf files (single or multi-file projects) back into an editable canvas — preserving VPC/subnet/resource nesting, security groups, IAM roles, and network connections — then generates an import report summarizing every resource action taken.</li>
+          <li><strong style="color:var(--text);">Built-in compliance scanning.</strong> Validates architectures against CIS, SOC 2, PCI DSS, HIPAA, and NIST CSF, surfacing critical/warning/info findings (e.g. publicly exposed EKS endpoints, unencrypted secrets) with remediation guidance for each.</li>
+          <li><strong style="color:var(--text);">IAM &amp; security group management.</strong> Dedicated tabs to review roles and policy attachments, and to flag components with no IAM role assigned.</li>
+          <li><strong style="color:var(--text);">Live cost estimation.</strong> Real-time pricing from AWS/Azure/GCP APIs (with static fallback and a 1-hour TTL cache), editable usage assumptions per resource, growth-adjusted 6/12/24-month cost projections, and a FinOps mode that compares modeled cost against actual AWS Cost Explorer spend.</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://github.com/sking-4242/archon" target="_blank" rel="noopener">GitHub Repository &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Archon Academy -->
+      <div class="project-card">
+        <div class="project-title-row">
+          <div>
+            <h3 style="font-size:1.3rem;">Archon Academy</h3>
+            <div class="org" style="color:var(--text-muted); margin-top:2px;">Cloud certification exam-prep platform, companion to Archon Professional</div>
+          </div>
+          <span class="project-status status-active">Active</span>
+        </div>
+
+        <div class="tags">
+          <span class="tag">AWS</span>
+          <span class="tag">Azure</span>
+          <span class="tag">GCP</span>
+          <span class="tag">E-Learning</span>
+          <span class="tag">Exam Prep</span>
+        </div>
+
+        <p>Archon Academy is a structured study platform for AWS, Azure, and GCP certifications — built to teach the same cloud concepts that Archon Professional lets you design with. It pairs long-form lessons with domain-weighted cert paths, hands-on practice, and full-length timed exams, so studying stays tied to a concrete exam blueprint instead of scattered notes.</p>
+
+        <p style="margin-top:14px; color:var(--text-muted); font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; font-weight:600;">Highlights</p>
+        <ul class="bullets">
+          <li><strong style="color:var(--text);">Cert paths mapped to real exam blueprints.</strong> Each path (e.g. AWS Cloud Practitioner CLF-C02) tracks exam readiness against scored-question counts, time limits, and passing thresholds, broken into weighted domains like Cloud Concepts (24%) and Security and Compliance (30%).</li>
+          <li><strong style="color:var(--text);">26+ modules across AWS, Azure, and GCP.</strong> Filterable by difficulty (Beginner through Expert) and by certification tag (CCP, SAA, SCS, SOA, DVA, DEA, DBS, DOP, MLA, MLS, AZ-900, GCP CDL, and more), each with lesson counts and progress tracking.</li>
+          <li><strong style="color:var(--text);">In-depth written lessons.</strong> Every lesson explains not just the "what" but the "why" — grounding concepts in real-world problems (e.g. the capacity mismatch problem behind cloud elasticity) and tying them back to specific exam domains.</li>
+          <li><strong style="color:var(--text);">Practice exams and quizzes.</strong> Full 90-question timed practice tests per certification with multiple difficulty variants (below/at/above exam level), plus a study mode with unlimited time and per-question explanations and instant correct/incorrect feedback.</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://github.com/sking-4242/archon" target="_blank" rel="noopener">GitHub Repository &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Placeholder project -->
+      <div class="project-card placeholder">
+        <div class="project-title-row">
+          <div>
+            <h3 style="font-size:1.3rem; color:var(--text-muted);">Next Project</h3>
+            <div class="org" style="color:var(--text-muted); margin-top:2px;">Reserved slot</div>
+          </div>
+          <span class="project-status status-pending">Placeholder</span>
+        </div>
+        <p style="margin-top:14px; color:var(--text-muted);">This card is reserved for a future project. Swap in a title, description, tech tags, and links whenever it's ready.</p>
+      </div>
+
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Seth King</span>
+    <div class="nav-social">
+      <a href="mailto:seth.king.p4@gmail.com">seth.king.p4@gmail.com</a>
+      <a href="https://linkedin.com/in/sking4242" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/sking-4242" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
